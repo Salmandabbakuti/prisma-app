@@ -43,7 +43,7 @@ query{
 
 #create
 mutation{
-  createMovie(data:{name:"Terminator",producer:"Gale Ann Hurd",rating:8.2}){
+  createMovie(data:{name:"Terminator", producer:"Gale Ann Hurd", rating:8.2, rank:24}){
     id
     name
     producer
@@ -54,7 +54,7 @@ mutation{
 
 #update
 mutation{
-  updateMovie(data:{name:"Terminator",producer:"Gale Ann Hurd",rating:8.8},where:{id:"5ea130ce24aa9a0007d6e26f"}){
+  updateMovie(data:{name:"Terminator", producer:"Gale Ann Hurd", rating:8.8, rank:22},where:{id:"5ea130ce24aa9a0007d6e26f"}){
     id
     name
     producer
