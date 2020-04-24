@@ -3,7 +3,7 @@
 ### Prisma-Setup Initialization (Optional for this repository)
 ```
 npm i
-prisma init <project name> (or) npm run prisma-init   # if no name specified, it will create necessary setup files in the same directory
+prisma init <project name> (or) npm run prisma-init <project name>   # if no name specified, it will create necessary setup files in the same directory
 
 #prompts for few details about db
 ```
