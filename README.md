@@ -3,7 +3,7 @@
 ### Prisma-Setup Initialization (Optional for this repository)
 ```
 npm i
-prisma init <project name>    # if no name specified, it will create necessary setup files in the same directory
+prisma init <project name> (or) npm run prisma-init   # if no name specified, it will create necessary setup files in the same directory
 
 #prompts for few details about db
 ```
@@ -12,7 +12,7 @@ prisma init <project name>    # if no name specified, it will create necessary s
 cd <project name>
 npm i
 docker-compose up -d # wait for few seconds to finishup things
-prisma deploy
+prisma deploy (or) npm run prisma-deploy
 
 go to your http://<ip>:4466/ for GraphQL Playground
 ```
