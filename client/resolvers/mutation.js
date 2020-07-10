@@ -12,11 +12,10 @@ const Mutation = {
         notification:{
             event: 'New Movie Listed.',
             data: newMovie
-        }
-      })
-       },
-
-
+         }
+        })
+     },
+   
     async updateMovie(parent, args, { prisma }) {
        
        let isMovieExists = await prisma.exists.Movie({id:args.id})
