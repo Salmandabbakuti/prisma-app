@@ -10,7 +10,7 @@
 ```
 npm i
 npm run get-schema #(Optional, as it is already generated for this project)
-node app.js #query and mutations from nodejs
+npm run dev #query and mutations from nodejs logic layer
 
 ```
 ####  Queries and Mutations(Logic Layer):
