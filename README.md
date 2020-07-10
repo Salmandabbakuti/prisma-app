@@ -16,7 +16,7 @@ prisma deploy (or) npm run prisma-deploy
 
 go to your http://<ip>:4466/ for GraphQL Playground
 ```
-####  Queries and Mutations:
+####  Queries and Mutations:(Prisma Layer)
 ```
 #getall
 query{
