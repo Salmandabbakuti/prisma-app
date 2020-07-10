@@ -3,7 +3,7 @@ const Query = {
  async getMovies(parent, args, { prisma }){
 
 
-  const movie = prisma.query.getMovie({
+  const movie = prisma.query.movie({
     where:{id:args.id}
    })
   if(movie.length == 0){

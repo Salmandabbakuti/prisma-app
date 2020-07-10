@@ -12,8 +12,11 @@ const schema = makeExecutableSchema({
 const pubsub = new PubSub();
 const server = new GraphQLServer({
   schema,
-  context: {
-    pubsub
+  context(){
+    return {
+    pubsub,
+    prisma
+    }
   }
 });
 const options = {

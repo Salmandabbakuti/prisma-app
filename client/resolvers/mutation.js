@@ -2,7 +2,7 @@ const Mutation = {
 
    async addMovie(parent, args, { prisma }) {
        
-       let newMovie = await prisma.createMovie({
+       let newMovie = await prisma.mutation.createMovie({
            data:{...args}
        })
 
