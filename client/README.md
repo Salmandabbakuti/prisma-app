@@ -10,6 +10,63 @@
 ```
 npm i
 npm run get-schema #(Optional, as it is already generated for this project)
-node app.js #query and mutations from nodejs
+npm run dev #query and mutations from nodejs logic layer
 
+```
+####  Queries and Mutations(Logic Layer):
+```
+#getall
+
+query{
+  getMovies{
+    id
+    name
+    producer
+    rating
+    rank
+  }
+}
+
+
+#get by id
+
+query{
+  getMovie(id:"ckcfv4u7k000l07881ahs0cxg"){
+    id
+    name
+    producer
+    rating
+    rank
+  }
+}
+
+
+#create
+
+mutation {
+  addMovie(name:"Test",rank:23,rating:8.2,producer:"Salman"){
+    producer
+    name
+    rating
+    rank
+  }
+}
+
+#update
+
+mutation{
+  updateMovie(id: "ckcfv4u7k000l07881ahs0cxg",name:"Interstellar",rank:23,rating:8.2,producer:"Gale Anne Hurd"){
+    producer
+    name
+    rating
+    rank
+  }
+}
+
+#delete
+mutation{
+  deleteMovie(id:"dss"){
+    response
+  }
+}
 ```

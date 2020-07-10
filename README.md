@@ -12,11 +12,10 @@ prisma init <project name> (or) npm run prisma-init <project name>   # if no nam
 cd <project name>
 npm i
 docker-compose up -d # wait for few seconds to finishup things
-prisma deploy (or) npm run prisma-deploy
-
-go to your http://<ip>:4466/ for GraphQL Playground
+prisma deploy (or) npm run prisma-deploy #go to your http://<ip>:4466/ for Prisma GraphQL Playground (Crud API)
+npm run dev #http://<ip>:4000/playground for GraphQL Playground (Logic API)
 ```
-####  Queries and Mutations:
+####  Queries and Mutations:(Prisma Layer)
 ```
 #getall
 query{
