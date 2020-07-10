@@ -1,6 +1,6 @@
 const Query = {
 
- async getMovies(parent, args, { prisma }){
+ async getMovie(parent, args, { prisma }){
 
 
   const movie = prisma.query.movie({
@@ -10,11 +10,6 @@ const Query = {
     throw new error('No movie Found with this Id..!')
     }
    return movie;
-
   }
-
-
-
-
 }
 export default Query;
